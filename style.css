@@ -1,0 +1,136 @@
+/* ========== GENERAL ========== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  color: #333;
+}
+
+/* ========== HEADER ========== */
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/banner.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 30px 0; /* balanced padding */
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0 0 10px 0;
+  animation: fadeIn 2s ease;
+}
+
+nav a {
+  color: #fff;
+  font-size: 0.9em;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ========== MAIN CONTENT ========== */
+main {
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+main h3 {
+  margin-top: 20px;
+  color: #333;
+}
+
+main ul {
+  list-style-type: disc;
+  margin: 0 auto;
+  padding-left: 20px;
+  display: inline-block;
+  text-align: left;
+}
+
+/* ========== PROFILE IMAGE ========== */
+.profile-pic {
+  width: 600px;
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/banner.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  animation: fadeIn 2s ease;
+}
+
+/* ========== BUTTON ========== */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* ========== PAGE BACKGROUNDS ========== */
+.about-main {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/background.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.page-background {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
